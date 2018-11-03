@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>E Library</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="foreground.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+<body class="container-fluid" style="background:cyan;">
+<h1 class="text-center">E-LIBRARY</h1>
+<a href="E-Library_v0.1.apk" class="btn-block btn-lg btn-primary text-center" role="button">DOWNLOAD<br/>(current version: 0.1)</a><br/>
+<div class="dropdown">
+	<button class="btn-block dropdown-toggle" type="button" data-toggle="dropdown">Description
+		<span class="glyphicon glyphicon-plus-sign"></span></button>
+	<div class="dropdown-menu">
+   		E-Library is an android app developed to help you with your studies. Its main objective is to make all the textbooks and reference books used in the academic courses available for free of cost to the students. It enables you to download the books from the app, store it in the device storage, open it in the app, and also delete the books at the end of the semester. All you require is an internet connection and enough storage to store the books in your phone. Feel free to give feedback, book suggestion, bug reports from the app. New books will be added on a regular basis. Click on download button now and make learning easy with the help of E-library.
+	</div>
+</div> 
+<div class="dropdown">
+	<button class="btn-block dropdown-toggle" type="button" data-toggle="dropdown">How to install?
+		<span class="glyphicon glyphicon-plus-sign"></span></button>
+	<div class="dropdown-menu" style="width:100%;">
+   		 <ul class="list-group">
+  			<li class="list-group-item">Steps to install E-library app</li>
+  			<li class="list-group-item"  style="background: rgb(240,240,240);">1. Download apk file from link above. When browser promts <i>"This type of file may harm your device, download anyway?"</i>, tap <i>"yes"</i>. Do not worry, it simply says so because android treats any apps downloaded from sources other than the playstore as <i>"harmful apps"</i>.</li>
+  			<li class="list-group-item"  style="background: rgb(240,240,240);">2. Go to the settings app on your device and navigate to security menu. In the security menu, make sure that <b>unknown sources</b> toggle is set to <b>on</b>. This allows the apk installer to install apks from sources other than the playstore.</a></li>
+  			<li class="list-group-item"  style="background: rgb(240,240,240);">3. Click on the downloaded apk and install the app. If you face any problem while installing the app, please contact us at <a href="mailto:elib.feedback@gmail.com?subject=BUG%20REPORT" target="_top">elib.feedback@gmail.com</a></li>
+		</ul> 
+	</div>
+</div> 
+<div class="dropdown">
+	<button class="btn-block dropdown-toggle" type="button" data-toggle="dropdown">How to use?
+		<span class="glyphicon glyphicon-plus-sign"></span></button>
+	<div class="dropdown-menu container-fluid">
+   		E-Library exhibits very simple and user friendly UI. To navigate to a particular book, follow these steps: <b>Department</b> <span class="glyphicon glyphicon-chevron-right"></span> <b>Semester</b> <span class="glyphicon glyphicon-chevron-right"></span> <b>Subject</b> <span class="glyphicon glyphicon-chevron-right"></span> <b>Book</b>. Tap on <b>Download</b> button once it turns from <span class="bg-success"><b>grey</b></span> to <span class="bg-primary"><b>blue</b></span>. Once download is complete, tap on <b>Open</b> button to read the book. To delete a book, tap on <b>Delete</b> button to delete the book from your device storage. You may give us a feedback, suggest a book, and report a bug from the app by tapping the menu on the top right corner of the home screen of the app. You may also update the app from the same menu.
+	</div>
+</div> 
+</div><br/>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" style="background: white;">
+    <div class="item active">
+      <img src="1.png" alt="Departments" style="width:151px;height:287px;">
+      <!--div class="carousel-caption">
+        <h3>Select department</h3>
+      </div-->
+    </div>
+    <div class="item">
+      <img src="2.png" alt="Semesters" style="width:151px;height:287px;">
+      <!--div class="carousel-caption">
+        <h3>Select semester</h3>
+      </div-->
+    </div>
+    <div class="item">
+      <img src="3.png" alt="Subjects" style="width:151px;height:287px;">
+      <!--div class="carousel-caption">
+        <h3>Select subject</h3>
+      </div-->
+    </div>
+    <div class="item">
+      <img src="4.png" alt="Books" style="width:151px;height:287px;">
+      <!--div class="carousel-caption">
+        <h3>Select book</h3>
+      </div-->
+    </div>
+    <div class="item">
+      <img src="5.png" alt="Subjects" style="width:151px;height:287px;">
+      <!--div class="carousel-caption">
+        <h3>Download, Open, Delete</h3>
+      </div-->
+    </div>
+    <div class="item">
+      <img src="6.png" alt="Subjects" style="width:151px;height:287px;">
+      <!--div class="carousel-caption">
+        <h3>Download, Open, Delete</h3>
+      </div-->
+    </div>
+  </div>
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</body>
+</html>
