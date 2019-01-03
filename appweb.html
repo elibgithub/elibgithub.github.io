@@ -220,14 +220,6 @@
       height: 96px;
       opacity: 1;
     }
-    .gwd-taparea-4q4d {
-      position: absolute;
-      left: 110px;
-      top: 210px;
-      width: 100px;
-      height: 30px;
-      opacity: 1;
-    }
     .gwd-div-1pjh {
       position: absolute;
       text-align: left;
@@ -243,14 +235,6 @@
       -webkit-mask: -webkit-linear-gradient(left, rgb(0, 0, 0), rgb(0, 0, 0) 78%, rgba(0, 0, 0, 0) 95%);
       opacity: 1;
       height: 27px;
-    }
-    .gwd-ci-starratings-1m7u {
-      position: absolute;
-      height: 20px;
-      opacity: 1;
-      left: 124px;
-      top: 66px;
-      width: 96px;
     }
     .gwd-div-1dn9 {
       position: absolute;
@@ -322,23 +306,6 @@
       top: 0px;
       width: 102px;
     }
-    .gwd-img-17hz {
-      position: absolute;
-      left: 0px;
-      width: 100px;
-      height: 30px;
-      top: 0px;
-    }
-    .gwd-div-2vxp {
-      position: absolute;
-      color: rgb(255, 255, 255);
-      font-family: Roboto;
-      width: 89px;
-      height: 21px;
-      left: 6px;
-      top: 5px;
-      text-align: center;
-    }
     .gwd-div-yoyg {
       text-align: center;
     }
@@ -353,12 +320,14 @@
       left: 124px;
       opacity: 1;
     }
-    .gwd-taparea-ttjm {
+    .gwd-button-9zis {
       position: absolute;
-      width: 200px;
-      height: 140px;
-      left: -50px;
-      top: -55px;
+      width: 31.25%;
+      height: 5%;
+      left: 34%;
+      top: 41%;
+      background-image: none;
+      background-color: rgb(0, 255, 219);
     }
   </style>
   <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script>
@@ -371,10 +340,6 @@
       // GWD Predefined Function
       gwd.actions.gwdGoogleAd.exit('gwd-ad', 'Exit-L', '', true, true);
     };
-    gwd.auto_App_btn_cta_exit_pAction = function(event) {
-      // GWD Predefined Function
-      gwd.actions.gwdGoogleAd.exit('gwd-ad', 'Exit-P', '', true, true);
-    };
     gwd.download = function(event) {
       window.open("https: //github.com/elibgithub/elibgithub.github.io/releases/download/0.1/app-debug.apk")
     };
@@ -384,12 +349,10 @@
      // This script block is auto-generated. Please do not edit!
     gwd.actions.events.registerEventHandlers = function(event) {
       gwd.actions.events.addHandler('app-btn-cta-exit-l', 'action', gwd.auto_App_btn_cta_exit_lAction, false);
-      gwd.actions.events.addHandler('app-btn-cta-exit-p', 'action', gwd.auto_App_btn_cta_exit_pAction, false);
       gwd.actions.events.addHandler('app-btn-cta-exit-l', 'action', gwd.download, false);
     };
     gwd.actions.events.deregisterEventHandlers = function(event) {
       gwd.actions.events.removeHandler('app-btn-cta-exit-l', 'action', gwd.auto_App_btn_cta_exit_lAction, false);
-      gwd.actions.events.removeHandler('app-btn-cta-exit-p', 'action', gwd.auto_App_btn_cta_exit_pAction, false);
       gwd.actions.events.removeHandler('app-btn-cta-exit-l', 'action', gwd.download, false);
     };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
@@ -419,12 +382,10 @@
       <gwd-metric-event source="app-gallery-p" event="firstinteraction" metric="app-gallery-p: Gallery Swiped"></gwd-metric-event>
       <gwd-metric-event source="app-gallery-p" event="allframesviewed" metric="app-gallery-p: All Frames Viewed"></gwd-metric-event>
       <gwd-metric-event source="app-gallery-p" event="frameexit" metric="" exit="Gallery Frame Exited"></gwd-metric-event>
-      <gwd-metric-event source="app-btn-cta-exit-p" event="tapareaexit" metric="" exit="Exit"></gwd-metric-event>
       <gwd-metric-event source="app-btn-cta-exit-l" event="tapareaexit" metric="" exit="Exit"></gwd-metric-event>
       <gwd-metric-event source="app-gallery-l" event="firstinteraction" metric="app-gallery-l: Gallery Swiped"></gwd-metric-event>
       <gwd-metric-event source="app-gallery-l" event="allframesviewed" metric="app-gallery-l: All Frames Viewed"></gwd-metric-event>
       <gwd-metric-event source="app-gallery-l" event="frameexit" metric="" exit="Gallery Frame Exited"></gwd-metric-event>
-      <gwd-metric-event source="gwd-taparea_1" event="tapareaexit" metric="" exit="Exit"></gwd-metric-event>
     </gwd-metric-configuration>
     <gwd-pagedeck class="gwd-page-container" id="pagedeck" data-gwd-offset-top="0px" data-gwd-offset-left="0px" default-page="page1_2">
       <gwd-page id="page1_2" class="gwd-page-wrapper gwd-lightbox gwd-div-9q9e" data-gwd-width="480px" data-gwd-height="320px" data-gwd-name="app-promo-landscape" alt-orientation-page="page1_3" centered="">
@@ -445,7 +406,7 @@
           <gwd-image class="gwd-img-a027 gwd-gen-7u44gwdanimation" id="app-icon-l" source="assets/elib.png" bind-source="appIcon"></gwd-image>
           <gwd-taparea id="app-btn-cta-exit-l" class="gwd-taparea-m3xh">
             <gwd-image class="gwd-img-6udd" id="cta-bg-l" source="assets/button.png"></gwd-image>
-            <div class="gwd-div-x2lz" id="cta-txt-l" bind-text="callToAction" data-gwd-fit-font-size="" onclick = "window.open('https://github.com/elibgithub/elibgithub.github.io/releases/download/0.1/app-debug.apk')">DOWNLOAD
+            <div class="gwd-div-x2lz" id="cta-txt-l" bind-text="callToAction" data-gwd-fit-font-size="" onclick="window.open('https://github.com/elibgithub/elibgithub.github.io/releases/download/0.1/app-debug.apk')">DOWNLOAD
             </div>
           </gwd-taparea>
         </div>
@@ -461,24 +422,16 @@
           </div>
           <div class="gwd-div-1dn9" id="app-reviews-p"><span class="gwd-span-rev2" bind-text="reviews" data-gwd-fit-font-size=""></span>
           </div>
-          <ci-starratings id="app-stars-p" ratingvalue="5" isemptyshown="" isemptycolored="" class="gwd-ci-starratings-1m7u" colorprimary="#f3b500" colorsecondary="#f3b500" iconsize="18" data-gwd-name="app-stars-p" bind-ratingvalue="rating"></ci-starratings>
           <div class="gwd-div-kvkc" id="app-desc-txt-p" bind-text="promoDescription" data-gwd-fit-font-size="" style="font-size: 13px;">E Library is an android app that brings a plethora of ebooks at your fingertips. Download now!</div>
           <div class="gwd-div-1qh9" id="app-head-txt-p" bind-text="promoHeadline" data-gwd-fit-font-size="">Educational app</div>
           <div class="gwd-div-1pjh" id="app-name-p" bind-text="appName" data-gwd-fit-font-size="">E Library</div>
           <gwd-image class="gwd-img-1pqe" id="app-icon-p" source="assets/elib.png" bind-source="appIcon"></gwd-image>
-          <a href="https://github.com/elibgithub/elibgithub.github.io/releases/download/0.1/app-debug.apk">
-          <gwd-taparea id="app-btn-cta-exit-p" class="gwd-taparea-4q4d" onclick = "window.open('https://github.com/elibgithub/elibgithub.github.io/releases/download/0.1/app-debug.apk')">
-            <gwd-image class="gwd-img-17hz" id="cta-bg-p" source="assets/button.png" onclick = "window.open('https://github.com/elibgithub/elibgithub.github.io/releases/download/0.1/app-debug.apk')"></gwd-image>
-            <div class="gwd-div-2vxp" id="cta-txt-p" bind-text="callToAction" data-gwd-fit-font-size="" onclick="window.open('https://github.com/elibgithub/elibgithub.github.io/releases/download/0.1/app-debug.apk')">DOWNLOAD
-            </div>
-            <gwd-taparea id="gwd-taparea_1" class="gwd-taparea-ttjm" onclick = "window.open('https://github.com/elibgithub/elibgithub.github.io/releases/download/0.1/app-debug.apk')"></gwd-taparea>
-          </gwd-taparea>
-          </a>
+          <button id="button_1" class="gwd-button-9zis text-tool-feedback"><a href="https://github.com/elibgithub/elibgithub.github.io/releases/download/0.1/app-debug.apk">Download</a>
+          </button>
         </div>
       </gwd-page>
     </gwd-pagedeck>
     <gwd-exit metric="Exit-L" url=""></gwd-exit>
-    <gwd-exit metric="Exit-P" url=""></gwd-exit>
   </gwd-google-ad>
   <script type="text/javascript" id="gwd-init-code">
     (function() {
