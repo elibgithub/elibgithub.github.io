@@ -391,7 +391,7 @@
       gwd.actions.events.removeHandler('app-btn-cta-exit-l', 'action', gwd.auto_App_btn_cta_exit_lAction, false);
       gwd.actions.events.removeHandler('app-btn-cta-exit-p', 'action', gwd.auto_App_btn_cta_exit_pAction, false);
       gwd.actions.events.removeHandler('app-btn-cta-exit-l', 'action', gwd.download, false);
-/    };
+    };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
     document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
   </script>
@@ -444,14 +444,14 @@
           <div class="gwd-div-1prl" id="app-name-l" bind-text="appName" data-gwd-fit-font-size="">E Library</div>
           <gwd-image class="gwd-img-a027 gwd-gen-7u44gwdanimation" id="app-icon-l" source="assets/elib.png" bind-source="appIcon"></gwd-image>
           <gwd-taparea id="app-btn-cta-exit-l" class="gwd-taparea-m3xh">
-            <gwd-image class="gwd-img-6udd" id="cta-bg-l" source="assets/button.png" ></gwd-image>
+            <gwd-image class="gwd-img-6udd" id="cta-bg-l" source="assets/button.png"></gwd-image>
             <div class="gwd-div-x2lz" id="cta-txt-l" bind-text="callToAction" data-gwd-fit-font-size="" onclick = "window.open('https://github.com/elibgithub/elibgithub.github.io/releases/download/0.1/app-debug.apk')">DOWNLOAD
             </div>
           </gwd-taparea>
         </div>
       </gwd-page>
       <gwd-page id="page1_3" class="gwd-page-wrapper gwd-lightbox gwd-div-1kn6" data-gwd-width="320px" data-gwd-height="480px" data-gwd-name="app-promo-portrait" alt-orientation-page="page1_2" centered="">
-        <div class="gwd-page-content gwd-div-1cau" onclick="window.open('https://github.com/elibgithub/elibgithub.github.io/releases/download/0.1/app-debug.apk');">
+        <div class="gwd-page-content gwd-div-1cau">
           <gwd-image class="gwd-img-3a63" id="bg-img-p" source="assets/bg.gif"></gwd-image>
           <gwd-carouselgallery id="app-gallery-p" scaling="contain" class="gwd-carouselgallery-70vd" frame-width="260" frame-height="190" neighbor-rotation-y="45" neighbor-translation-x="80" neighbor-translation-y="-8" neighbor-translation-z="-80" images="assets/main.png,assets/book.png,assets/page.png,assets/page1.png"
           bind-images="screenshots | join ," clamp-frame-size-to-image="false"></gwd-carouselgallery>
@@ -466,9 +466,12 @@
           <div class="gwd-div-1qh9" id="app-head-txt-p" bind-text="promoHeadline" data-gwd-fit-font-size="">Educational app</div>
           <div class="gwd-div-1pjh" id="app-name-p" bind-text="appName" data-gwd-fit-font-size="">E Library</div>
           <gwd-image class="gwd-img-1pqe" id="app-icon-p" source="assets/elib.png" bind-source="appIcon"></gwd-image>
-            <gwd-image class="gwd-img-17hz" id="cta-bg-p" source="assets/button.png" onclick = "window.open('https://github.com/elibgithub/elibgithub.github.io/releases/download/0.1/app-debug.apk')"></gwd-image>
-            <div class="gwd-div-2vxp" id="cta-txt-p" bind-text="callToAction" data-gwd-fit-font-size="">DOWNLOAD
-          </div>
+          <gwd-taparea id="app-btn-cta-exit-p" class="gwd-taparea-4q4d">
+            <gwd-image class="gwd-img-17hz" id="cta-bg-p" source="assets/button.png"></gwd-image>
+            <div class="gwd-div-2vxp" id="cta-txt-p" bind-text="callToAction" data-gwd-fit-font-size="" onclick="window.open('https://github.com/elibgithub/elibgithub.github.io/releases/download/0.1/app-debug.apk')">DOWNLOAD
+            </div>
+            <gwd-taparea id="gwd-taparea_1" class="gwd-taparea-ttjm"></gwd-taparea>
+          </gwd-taparea>
         </div>
       </gwd-page>
     </gwd-pagedeck>
