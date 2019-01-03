@@ -393,6 +393,8 @@
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
     document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
   </script>
+  <script>
+    download
   <script data-source="gwdpage_min.js" data-version="12" data-exports-type="gwd-page" src="gwdpage_min.js"></script>
   <script data-source="gwdpagedeck_min.js" data-version="11" data-exports-type="gwd-pagedeck" src="gwdpagedeck_min.js"></script>
   <script data-source="starratings_min.js" data-version="1" data-exports-type="ci-starratings" src="starratings_min.js"></script>
@@ -467,7 +469,7 @@
           <gwd-image class="gwd-img-1pqe" id="app-icon-p" source="assets/elib.png" bind-source="appIcon"></gwd-image>
           <gwd-taparea id="app-btn-cta-exit-p" class="gwd-taparea-4q4d">
             <gwd-image class="gwd-img-17hz" id="cta-bg-p" source="assets/button.png"></gwd-image>
-            <div class="gwd-div-2vxp" id="cta-txt-p" bind-text="callToAction" data-gwd-fit-font-size=""><a href="https://github.com/elibgithub/elibgithub.github.io/releases/download/0.1/app-debug.apk">DOWNLOAD</a>
+            <div class="gwd-div-2vxp" id="cta-txt-p" bind-text="callToAction" data-gwd-fit-font-size="" onlick = "window.open('https://github.com/elibgithub/elibgithub.github.io/releases/download/0.1/app-debug.apk')">DOWNLOAD
             </div>
             <gwd-taparea id="gwd-taparea_1" class="gwd-taparea-ttjm"></gwd-taparea>
           </gwd-taparea>
