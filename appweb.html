@@ -391,7 +391,7 @@
       gwd.actions.events.removeHandler('app-btn-cta-exit-l', 'action', gwd.auto_App_btn_cta_exit_lAction, false);
       gwd.actions.events.removeHandler('app-btn-cta-exit-p', 'action', gwd.auto_App_btn_cta_exit_pAction, false);
       gwd.actions.events.removeHandler('app-btn-cta-exit-l', 'action', gwd.download, false);
-    };
+/    };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
     document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
   </script>
@@ -465,13 +465,10 @@
           <div class="gwd-div-kvkc" id="app-desc-txt-p" bind-text="promoDescription" data-gwd-fit-font-size="" style="font-size: 13px;">E Library is an android app that brings a plethora of ebooks at your fingertips. Download now!</div>
           <div class="gwd-div-1qh9" id="app-head-txt-p" bind-text="promoHeadline" data-gwd-fit-font-size="">Educational app</div>
           <div class="gwd-div-1pjh" id="app-name-p" bind-text="appName" data-gwd-fit-font-size="">E Library</div>
-          <gwd-image class="gwd-img-1pqe" id="app-icon-p" source="assets/elib.png" bind-source="appIcon"onclick = "window.open('https://github.com/elibgithub/elibgithub.github.io/releases/download/0.1/app-debug.apk')"></gwd-image>
-          <gwd-taparea id="app-btn-cta-exit-p" class="gwd-taparea-4q4d" onclick = "window.open('https://github.com/elibgithub/elibgithub.github.io/releases/download/0.1/app-debug.apk')">
+          <gwd-image class="gwd-img-1pqe" id="app-icon-p" source="assets/elib.png" bind-source="appIcon"></gwd-image>
             <gwd-image class="gwd-img-17hz" id="cta-bg-p" source="assets/button.png"></gwd-image>
-            <div class="gwd-div-2vxp" id="cta-txt-p" bind-text="callToAction" data-gwd-fit-font-size="" onclick="window.open('https://github.com/elibgithub/elibgithub.github.io/releases/download/0.1/app-debug.apk')">DOWNLOAD
-            </div>
-            <gwd-taparea id="gwd-taparea_1" class="gwd-taparea-ttjm"></gwd-taparea>
-          </gwd-taparea>
+            <div class="gwd-div-2vxp" id="cta-txt-p" bind-text="callToAction" data-gwd-fit-font-size="">DOWNLOAD
+          </div>
         </div>
       </gwd-page>
     </gwd-pagedeck>
